@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/style.css" rel="stylesheet">
+    <link href="./styles/media.css" rel="stylesheet">
+    <link href="./styles/fonts.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4c536a6bd5.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="./components/images/pedra_player.png">
+    <title>Pedra, Papel ou Tesoura</title>
+</head>
+<script src="./js/index.js"></script>
+
+<body>
+    <header id="header">
+        <h1>Pedra, Papel ou Tesoura?</h1> </br>
+        <p>O primeiro a alcançar 5 pontos, vence o jogo.</p>
+    </header>
+    <div class="central" id="central">
+        <aside class="botoes">
+            <div class="opcoesPlayer">
+                <p>Jogador</p>
+                <p id="scorePlayer">Pontuação: 0</p>
+            </div>
+            <div class="opcoesComputer">
+                <a class="botoes-item" id="Pedra" value="Pedra" onclick="result(this.id)">
+                    <img src="./components/images/pedra_player.png" style="max-widht:64px; max-height:64px;">
+                </a>
+                <a class="botoes-item" id="Papel" value="Papel" onclick="result(this.id)">
+                    <img src="./components/images/papel_player.png" style="max-widht:64px; max-height:64px;">
+                </a>
+                <a class="botoes-item" id="Tesoura" value="Tesoura" onclick="result(this.id)">
+                    <img src="./components/images/tesoura_player.png" style="max-widht:64px; max-height:64px;">
+                </a>
+            </div>
+
+        </aside>
+        <aside>
+            <aside class="botoes2">
+                <div>
+                    <p>Computador</p>
+                    <p id="scoreComputer">Pontuação: 0</p>
+                </div>
+                <div class="opcoesComputer">
+                    <a class="botoes-item2" id="botoes-item4" value="Pedra">
+                        <img src="./components/images/pedra_computer.png" style="max-widht:64px; max-height:64px;">
+                    </a>
+                    <a class="botoes-item2" id="botoes-item5" value="Papel">
+                        <img src="./components/images/papel_computer.png" style="max-widht:64px; max-height:64px;">
+                    </a>
+                    <a class="botoes-item2" id="botoes-item6" value="Tesoura">
+                        <img src="./components/images/tesoura_computer.png" style="max-widht:64px; max-height:64px;">
+                    </a>
+                </div>
+            </aside>
+    </div>
+
+
+    <div class="final">
+        <p id="result1"></p>
+    </div>
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2 id="resusltBestOfFive"></h2>
+            <a class="close" href="#">&times;</a>
+            <div id="result" class="content">
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>
+            Copyright ©
+            <script>
+                document.write(new Date().getFullYear())
+            </script>
+            Ezequiel Marinho
+        </p>
+        <a href="https://github.com/quelzynh0" target="_blank">
+            <i class="fab fa-github"></i></a>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+@media screen and (max-width: 900px) {
+    #central {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .botoes {
+        margin: 12px;
+        width: 270px;
+        height: 170px;
+
+    }
+
+    .botoes2 {
+        margin: 12px;
+        width: 270px;
+        height: 170px;
+
+    }
+
+    .footer {
+        font-size: 12px;
+    }
+
+    .box {
+        width: 70%;
+    }
+
+    .popup {
+        width: 70%;
+    }
+}
