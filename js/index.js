@@ -117,7 +117,7 @@ function result(value) {
         btnCreate.style.margin = '0 auto';
         btnCreate.style.marginTop = '15px';
         btnCreate.href = "#";
-        btnCreate.onclick = function () { window.location.href = "../index.html"; };
+        btnCreate.onclick = function () { window.location.href = "./index.html"; };
         document.getElementById('result').append(btnCreate);
 
     } else if (computerScore === 5) {
