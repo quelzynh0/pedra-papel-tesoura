@@ -1,0 +1,206 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: poppinsregular;
+    background-color: #363636;
+    min-height: 100vh;
+    margin: 0 auto;
+    color: white;
+
+}
+
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: poppinsmedium;
+    transition: 1s width 0ms;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+
+hover h1 {
+    transition: 1s width 500ms;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    font-family: poppinslight;
+
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+.central {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.botoes {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    border-radius: 15px;
+    margin: 25px;
+    background-color: #808080
+}
+
+.botoes2 {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    border-radius: 15px;
+    margin: 25px;
+    background-color: #808080
+}
+
+.botoes-item {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: white;
+}
+
+.botoes-item2 {
+    text-decoration: none;
+    background-color: white;
+}
+
+.botoes-item {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: white;
+
+}
+
+.botoes-item:hover {
+    background-color: blue;
+    color: white;
+    transition: 0.3s all;
+}
+
+.opcoesComputer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+p {
+    line-height: 1px;
+}
+
+#scorePlayer {
+    padding: 15px 0 0 0;
+}
+
+#scoreComputer {
+    padding: 15px 0 0 0;
+}
+
+#final {
+    display: flex;
+    margin: 100px;
+}
+
+#content {
+    display: flex;
+    gap: 100px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    color: var(--primary-light);
+}
+
+.fa-github {
+    color: var(--primary-light);
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+    color: white;
+}
+
+.fa-github:hover {
+    transform: rotate(360deg) scale(1.2);
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+    width: 280px;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: blue;
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+    color: black;
+}
